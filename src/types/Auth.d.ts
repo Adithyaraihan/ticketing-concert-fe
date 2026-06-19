@@ -1,3 +1,6 @@
+import { Session, User } from "next-auth";
+import { JWT } from "next-auth/jwt";
+
 interface IRegister{
     fullName: string;
     userName: string;
@@ -6,8 +9,26 @@ interface IRegister{
     confirmPassword: string;
 }
 
+interface ILogin{
+    identifier: string;
+    password: string;
+}
+
 interface IActivation{
     code : string;
 }
 
-export type {IRegister, IActivation}
+interface IUserExtended extends User{
+    accessToken?: string;
+    role?: string
+}
+
+interface ISessionExtended extends Session{
+    accessToken?: string;
+}
+
+interface IJWTExtended extends JWT{
+    user?: IUserExtended
+}
+
+export type {IRegister, IActivation, IJWTExtended, ISessionExtended, IUserExtended, ILogin}
