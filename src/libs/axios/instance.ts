@@ -27,14 +27,14 @@ instance.interceptors.request.use(
         return request
     },
     (error) => {
-        Promise.reject(error)
+        return Promise.reject(error)
     }
 )
 
 instance.interceptors.response.use(
     (response) => response,
     (error) => {
-        Promise.reject(error)
+        return Promise.reject(error)
     }
 )
 

@@ -27,7 +27,7 @@ const Register = () => {
                 <CardContent>
                     <h2 className="text-xl font-bold text-danger">Create Account</h2>
                     <p className="mb-4 text-small">Have an account?&nbsp;
-                        <Link href={"/auth/login"} className="font-semibold text-dange   r">Login here</Link>
+                        <Link href={"/auth/login"} className="font-semibold text-danger">Login here</Link>
                     </p>
                     <Form className="flex w-full flex-col" onSubmit={handleSubmit(handleRegister)}>
                         <div className="flex w-full flex-col gap-4">

@@ -1,11 +1,11 @@
-import Register from "@/components/commons/views/Register";
 import AuthLayout from "@/components/layouts/AuthLayout";
+import RegisterSucces from "@/components/commons/views/Auth/RegisterSucces";
 
 
 const RegisterPage = () => {
     return(
         <AuthLayout title="Ticketing Concert - Register">
-           <h1>Register Success</h1>
+            <RegisterSucces />
         </AuthLayout>
     )
 }

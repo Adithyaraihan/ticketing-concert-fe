@@ -1,4 +1,4 @@
-import Register from "@/components/commons/views/Register";
+import Register from "@/components/commons/views/Auth/Register";
 import AuthLayout from "@/components/layouts/AuthLayout";
 
 
